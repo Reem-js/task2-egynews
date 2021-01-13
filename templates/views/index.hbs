@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <title>newsegy</title>
+</head>
+
+
+
+
+<body>
+
+{{>header}}
+    <p style="background-color: aqua; height :50px; text:blue ;font-style:italic; font-size:18px">created by :{{name}}</p>
+
+{{#each news}}
+<div class="card mb-3">
+  <img class="card-img-top" src={{this.urlToImage}} alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{this.title}}</h5>
+    <p class="card-text"> {{this.description}}</p>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+  </div>
+</div>
+
+ 
+
+
+
+
+
+
+
+
+
+{{/each}}
+
+{{>footer}}
+ </p>
+</body>
+
+
